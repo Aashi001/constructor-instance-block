@@ -1,0 +1,18 @@
+class student{
+    String name;
+public student(String s){
+    name=s;
+}
+student(){
+    name="unknown";
+}
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    student o=new student("abc");
+	    student i=new student();
+		System.out.println(o.name);
+		System.out.println(i.name);
+	}
+}
