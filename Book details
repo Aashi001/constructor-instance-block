@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class book{
+    String name;
+    double price;
+    int qtyinstock;
+    
+  
+     public String getname(){
+     return name;
+     }
+     public void setname(String  name){
+     this.name=name;
+     }
+     public double getprice(){
+     return price;
+     }
+     public void setprice(double price){
+     this.price=price;
+     }
+     public int getqtyinstock(){
+     return qtyinstock;
+     }
+     public void setqtyinstock(int  qtyinstock){
+     this.qtyinstock=qtyinstock;
+ }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    String name=sc.nextLine();
+	    double price=sc.nextDouble();
+	    int qtyinstock=sc.nextInt();
+	    book obj=new book();
+	    obj.setname(name);
+	    obj.setprice(price);
+	    obj.setqtyinstock(qtyinstock);
+	    System.out.println(obj.getname());
+	    System.out.println(obj.getprice());
+	    System.out.println(obj.getqtyinstock());
+   
+       
+}
+	
+}
