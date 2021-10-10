@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class box
+{
+  double height;
+  double weight;
+  double depth;
+  
+  box (double h, double w, double d)
+  {
+    height=h;
+    weight=w;
+    depth=d;
+  }
+  double volume ()
+  {
+
+    return height * weight * depth;
+  }
+}
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    box obj = new box (10,10,10);
+    
+      
+      System.out.println (obj.volume ());
+  }
+}
